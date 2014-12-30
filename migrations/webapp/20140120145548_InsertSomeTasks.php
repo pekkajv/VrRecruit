@@ -1,6 +1,6 @@
 <?php
 
-$cliIndex = implode(DIRECTORY_SEPARATOR, ['Vreasy', 'application', 'cli', 'cliindex.php']);
+$cliIndex = implode(DIRECTORY_SEPARATOR, ['vreasy', 'application', 'cli', 'cliindex.php']);
 require_once($cliIndex);
 
 use Vreasy\Models\Task;
