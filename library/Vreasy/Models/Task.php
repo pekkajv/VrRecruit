@@ -13,6 +13,7 @@ class Task extends Base
     protected $assigned_phone;
     protected $created_at;
     protected $updated_at;
+    protected $status;
 
     public function __construct()
     {

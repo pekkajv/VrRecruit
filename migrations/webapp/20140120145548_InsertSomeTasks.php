@@ -14,6 +14,7 @@ class InsertSomeTasks extends Ruckusing_Migration_Base
                 'deadline' => (new \DateTime("+$i days"))->format(DATE_FORMAT),
                 'assigned_name' => 'John Doe',
                 'assigned_phone' => '+55 555-555-555',
+            	'status' => 'created',	
             ]);
             $t->save();
         }

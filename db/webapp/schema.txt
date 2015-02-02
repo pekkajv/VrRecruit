@@ -1,0 +1,15 @@
+CREATE TABLE `schema_migrations` (
+  `version` varchar(255) DEFAULT NULL,
+  UNIQUE KEY `idx_schema_migrations_version` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tasks` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `deadline` datetime DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `assigned_name` text,
+  `assigned_phone` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
